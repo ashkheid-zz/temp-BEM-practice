@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="./css/style.css">
-  <title>BEM Practice</title>
-</head>
-<body>
-  <header>
-    <img src="" alt="" class="header__logo">
-    <nav class="header__menu"> 
-      <ul>
-        <li class="header__menu-item">item1</li>
-        <li class="header__menu-item">item2</li>
-        <li class="header__menu-item">item3</li>
-        <li class="header__menu-item">item4</li>
-        <li class="header__menu-item">item5</li>
-        <li class="header__menu-item">item6</li>
-      </ul>
-    </nav>
-    <aside class="header__social-icons">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </aside>
-  </header>
-  <div class="hero">
-    <img src="./image/169573.jpg" alt="grayscale photo of a laptop near white notebook and ceramic mug on table" class="hero__image">
-    <h1 class="hero__title">Karademy</h1>
-    <h3 class="hero__subtitle">
-      <span>Live Coding</span>
-      <span>Bootcamp</span>
-      <span>Troubleshooting</span>
-    </h3>
-  </div>
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>BEM Practice</title>
+  </head>
+  <body>
+    <header>
+      <img src="" alt="" class="header__logo" />
+      <nav class="header__menu">
+        <ul>
+          <li class="header__menu-item">item1</li>
+          <li class="header__menu-item">item2</li>
+          <li class="header__menu-item">item3</li>
+          <li class="header__menu-item">item4</li>
+          <li class="header__menu-item">item5</li>
+          <li class="header__menu-item">item6</li>
+        </ul>
+      </nav>
+      <aside class="header__social-icons">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </aside>
+    </header>
+    <div class="hero">
+      <div class="hero___image--overlay">
+        <img
+          src="./image/169573.jpg"
+          alt="grayscale photo of a laptop near white notebook and ceramic mug on table"
+          class="hero__image"
+        />
+      </div>
+      <div class="hero__text-wrapper">
+        <div class="hero__colored-box"></div>
+        <h1 class="hero__title">Karademy</h1>
+        <h3 class="hero__subtitle">
+          <span>Live Coding</span>
+          <span>Bootcamp</span>
+          <span>Troubleshooting</span>
+        </h3>
+      </div>
+    </div>
+  </body>
 </html>

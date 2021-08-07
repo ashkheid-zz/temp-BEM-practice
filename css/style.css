@@ -12,9 +12,17 @@
 
 body {
   font-family: "Amatic SC", sans-serif;
+  background-image: url(../image/pattern.svg);
 }
 
 /*~~~~~~ header ~~~~~*/
+
+header {
+  background-color: #ECEFF1;
+  width: 100vw;
+  height: 75px;
+  position: fixed;
+}
 
 header * {
   display: inline-block;
@@ -43,8 +51,37 @@ header * {
   z-index: -100;
 }
 
+.hero__text-wrapper {
+  position: relative;
+  top: 15vw;
+  width: 40vw;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.hero__colored-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  background-color: #263238;
+  padding-block: 1em;
+  filter: blur(50px);
+  width: 500px;
+  height: 250px;
+  z-index: -1;
+}
+
 .hero__title {
   text-transform: uppercase;
+  font-size: 8rem;
+}
+
+.hero__subtitle {
+  font-size: 1.512rem;
 }
 
 .hero__subtitle span + span::before {
