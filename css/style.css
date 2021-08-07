@@ -15,6 +15,17 @@ body {
   background-image: url(../image/pattern.svg);
 }
 
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #263238;
+}
+
+a:hover {
+  color: #E65100;
+}
+
 /*~~~~~~ header ~~~~~*/
 
 header {
@@ -22,10 +33,19 @@ header {
   width: 100vw;
   height: 75px;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header * {
   display: inline-block;
+}
+
+.header__menu-item {
+  margin: 15px;
+  font-size: 1.7em;
+  font-weight: bold;
 }
 
 :where(.header__menu, .header__social-icons) li {
@@ -36,7 +56,7 @@ header * {
 
 .hero {
   text-align: center;
-  color: white;
+  color: #ECEFF1;
 }
 
 .hero__image {
@@ -71,13 +91,18 @@ header * {
   padding-block: 1em;
   filter: blur(50px);
   width: 500px;
-  height: 250px;
+  height: 300px;
   z-index: -1;
 }
 
 .hero__title {
   text-transform: uppercase;
   font-size: 8rem;
+}
+
+.hero__title::first-letter {
+  font-size:10rem;
+  color: #E65100;
 }
 
 .hero__subtitle {
@@ -87,4 +112,5 @@ header * {
 .hero__subtitle span + span::before {
   content: "/";
   padding-inline: 0.3em;
+  color: #E65100;
 }
