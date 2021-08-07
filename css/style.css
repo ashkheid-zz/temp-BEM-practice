@@ -8,11 +8,46 @@
   box-sizing: border-box;
 }
 
+/*~~~~~~ General ~~~~~*/
+
 body {
-  font-family: sans-serif;
+  font-family: "Amatic SC", sans-serif;
+}
+
+/*~~~~~~ header ~~~~~*/
+
+header * {
+  display: inline-block;
+}
+
+:where(.header__menu, .header__social-icons) li {
+  list-style: none;
+}
+
+/*~~~~~~ Hero ~~~~~*/
+
+.hero {
+  text-align: center;
+  color: white;
 }
 
 .hero__image {
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
   width: min(100vw, 1200px);
+  z-index: -100;
+}
+
+.hero__title {
+  text-transform: uppercase;
+}
+
+.hero__subtitle span + span::before {
+  content: "/";
+  padding-inline: 0.3em;
 }
