@@ -1,0 +1,29 @@
+@import url(../font/amatic-font.css);
+
+.header__menu-item {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.header__menu-item:hover {
+  font-size: 2.5em;
+}
+
+.hero {
+  text-align: center;
+  color: #eceff1;
+}
+
+.hero__title {
+  text-transform: uppercase;
+  font-size: 8rem;
+}
+
+.hero__title::first-letter {
+  font-size: 10rem;
+  color: #e65100;
+}
+
+.hero__subtitle {
+  font-size: 1.512rem;
+}

@@ -1,0 +1,15 @@
+body {
+  font-family: "Amatic SC", sans-serif;
+  background-image: url(../image/pattern.svg);
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #263238;
+}
+
+a:hover {
+  color: #e65100;
+}
